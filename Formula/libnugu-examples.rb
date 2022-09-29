@@ -11,8 +11,9 @@ class LibnuguExamples < Formula
 
   bottle do
     root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-examples-1.7.3"
-    sha256 monterey: "687e5036e86830424b3f66eb4be29a32c54fd227d6cc2c37512150e37192bb55"
-    sha256 big_sur:  "c275243fb87ba2a30890cf086c8d5340052ab5473d738e6075c07cd0e3d0247b"
+    rebuild 1
+    sha256 cellar: :any, monterey: "c4101550d00b4004cf6ac0a0ad56936eb049e48cdbcb7328704ee6967048477b"
+    sha256 cellar: :any, big_sur:  "0171d17a1e6e6fde026ea2e21aa3d5b8d76ffe02c129f27488f9c5dc8d684a12"
   end
 
   depends_on "cmake" => :build
