@@ -1,9 +1,9 @@
 class LibnuguExamples < Formula
   desc "Example applications for NUGU SDK"
   homepage "https://github.com/nugu-developers/nugu-linux"
-  url "https://github.com/nugu-developers/nugu-linux/archive/a5bffd0.tar.gz"
+  url "https://github.com/nugu-developers/nugu-linux/archive/742ca26.tar.gz"
   version "1.7.3"
-  sha256 "1d7846706201448156b9a6ba38535dcae6b785cc96ccd102f6da40b91052065b"
+  sha256 "b5d74620bd33f27118e3c30a5c27838a3b43e434b8640b58c6fef4674f6e6cd7"
   license "Apache-2.0"
 
   # brew install --build-from-source --HEAD libnugu
@@ -21,9 +21,10 @@ class LibnuguExamples < Formula
   depends_on "libnugu-plugins"
 
   def install
-    args = %w[
+    args = %W[
       -DENABLE_EXAMPLES_ONLY=ON
       -DPACKAGING=ON
+      -DASSET_DIR=#{Formula["libnugu"].share}/nugu
     ]
 
     system "cmake", "-S", ".", "-B", "build", *args, *std_cmake_args
