@@ -1,9 +1,9 @@
 class LibnuguPlugins < Formula
   desc "Default Plugins for NUGU SDK"
   homepage "https://github.com/nugu-developers/nugu-linux"
-  url "https://github.com/nugu-developers/nugu-linux/archive/a5bffd0.tar.gz"
+  url "https://github.com/nugu-developers/nugu-linux/archive/742ca26.tar.gz"
   version "1.7.3"
-  sha256 "1d7846706201448156b9a6ba38535dcae6b785cc96ccd102f6da40b91052065b"
+  sha256 "b5d74620bd33f27118e3c30a5c27838a3b43e434b8640b58c6fef4674f6e6cd7"
   license "Apache-2.0"
 
   # brew install --build-from-source --HEAD libnugu
@@ -18,14 +18,15 @@ class LibnuguPlugins < Formula
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "gst-plugins-bad"
+  depends_on "gst-plugins-base"
   depends_on "gst-plugins-good"
   depends_on "gstreamer"
   depends_on "libnugu"
+  depends_on "libnugu-epd"
   depends_on "gst-plugins-ugly" => :recommended
 
   def install
     args = %w[
-      -DENABLE_VENDOR_LIBRARY=OFF
       -DENABLE_PLUGINS_ONLY=ON
       -DPACKAGING=ON
     ]
