@@ -9,6 +9,10 @@ class LibnuguExtension < Formula
   sha256 "3078091c659fb5d9f2b672b4f6564e64f3faa3f14803cd26e5e1dfcb27803ca5"
   license "Apache-2.0"
 
+  # brew install --build-from-source --HEAD libnugu-extension
+  # `HOMEBREW_GITHUB_API_TOKEN` environment variable required
+  head "https://github.com/nugulinux/nugu-extension.git", branch: "master"
+
   bottle do
     root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-extension-1.7.3"
     rebuild 1
