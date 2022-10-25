@@ -9,13 +9,6 @@ class LibnuguExamples < Formula
   # brew install --build-from-source --HEAD libnugu
   head "https://github.com/nugu-developers/nugu-linux.git", branch: "master"
 
-  bottle do
-    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-examples-1.7.3"
-    rebuild 1
-    sha256 cellar: :any, monterey: "c4101550d00b4004cf6ac0a0ad56936eb049e48cdbcb7328704ee6967048477b"
-    sha256 cellar: :any, big_sur:  "0171d17a1e6e6fde026ea2e21aa3d5b8d76ffe02c129f27488f9c5dc8d684a12"
-  end
-
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "libnugu"
