@@ -1,5 +1,5 @@
 class LibnuguPlugins < Formula
-  desc "Default Plugins for NUGU SDK"
+  desc "Default plugins for NUGU SDK"
   homepage "https://github.com/nugu-developers/nugu-linux"
   url "https://github.com/nugu-developers/nugu-linux/archive/742ca26.tar.gz"
   version "1.7.3"
@@ -8,13 +8,6 @@ class LibnuguPlugins < Formula
 
   # brew install --build-from-source --HEAD libnugu
   head "https://github.com/nugu-developers/nugu-linux.git", branch: "master"
-
-  bottle do
-    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-plugins-1.7.3"
-    rebuild 1
-    sha256 cellar: :any, monterey: "517c0e5c642b54d3139e74a009634b403ce2ae39f3d1f67930bcae9474fbb0d8"
-    sha256 cellar: :any, big_sur:  "3bfe230e4e4077b7f1a81e8834965b4ffbc161e222918ca2580f289feef01bd6"
-  end
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
