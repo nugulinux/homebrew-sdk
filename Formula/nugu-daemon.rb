@@ -9,12 +9,6 @@ class NuguDaemon < Formula
   # brew install --build-from-source --HEAD nugu-daemon
   head "https://github.com/nugulinux/nugu-daemon.git", branch: "master"
 
-  bottle do
-    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/nugu-daemon-1.7.3"
-    sha256 monterey: "9ab017eeeb61d058b38874071af0134238b504ed3f854d886a175dc1824cfe7d"
-    sha256 big_sur:  "9dc9ca3e32ca29cab94b19a7231ed6690b9cae40d6381ea1ca15a39bd1d199f7"
-  end
-
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "dbus"
