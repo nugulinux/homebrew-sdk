@@ -10,11 +10,10 @@ class LibnuguExamples < Formula
   head "https://github.com/nugu-developers/nugu-linux.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-examples-1.7.3"
-    rebuild 2
-    sha256 cellar: :any, arm64_monterey: "a9e777c3bd3ec3ecaafe2aa078657e03b25aebc5227f0bfceb507701f21db845"
-    sha256 cellar: :any, monterey:       "e84ff05a0c1c31076299f6844fa2573c234532ff9d06b9600a29c0bbd992224c"
-    sha256 cellar: :any, big_sur:        "bb5169bcd5eb7d00bae9509ac11116e48e43ce5f37bafd9b2c635ec2cd269848"
+    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-examples-1.7.4"
+    sha256 cellar: :any, arm64_monterey: "b522591f1f606621e8238acaae2a7f672115158b2227bb52fba13e8d7aff2087"
+    sha256 cellar: :any, monterey:       "3403c85dc7f0b68d3b9b511fc04962fe6fa1d89feabce251b05a28cc2e791107"
+    sha256 cellar: :any, big_sur:        "6fa3f5f6e0a11fdd8dbaf86174aaf70a8b0fe97437c74714c075f48ff2e133cc"
   end
 
   depends_on "cmake" => :build
