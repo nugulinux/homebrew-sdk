@@ -7,10 +7,10 @@ class LibnuguEpd < Formula
 
   bottle do
     root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-epd-2.1.11"
-    rebuild 1
-    sha256 cellar: :any, arm64_monterey: "62a9c42ea25e72af999f8616063ad777b161685b576047bf0e4cd6623fc706a3"
-    sha256 cellar: :any, monterey:       "427ab6a4168c79357a81359c4fac7b6fdfd6c8b1f02527e0d04620aed20387c6"
-    sha256 cellar: :any, big_sur:        "512be825bfaad1bbd544f799ae9d63e556f1ef9cbf693d4aeb942714c7e15899"
+    rebuild 2
+    sha256 cellar: :any, arm64_monterey: "237d2e7b0bdb2e8d0ba48853a75489100160eb8e562f90474543df302afb3d24"
+    sha256 cellar: :any, monterey:       "6ee8808cf89521ea45d36b2667b0c4b250e1728258018d763c4767be41908245"
+    sha256 cellar: :any, big_sur:        "60adf9932b8e3cf9542989998f02be1658732ae8bde4d35dbf925ca57485f2d6"
   end
 
   depends_on "cmake" => :build
