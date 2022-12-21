@@ -1,9 +1,9 @@
 class Libnugu < Formula
   desc "C/C++ library for NUGU SDK"
   homepage "https://github.com/nugu-developers/nugu-linux"
-  url "https://github.com/nugu-developers/nugu-linux/archive/742ca26.tar.gz"
-  version "1.7.3"
-  sha256 "b5d74620bd33f27118e3c30a5c27838a3b43e434b8640b58c6fef4674f6e6cd7"
+  url "https://github.com/nugu-developers/nugu-linux/archive/8b598cf.tar.gz"
+  version "1.7.4"
+  sha256 "b0d03d292e46b1e44e0acf35d4009c724f8f49aa0aafa1043746d4446965ca42"
   license "Apache-2.0"
 
   # brew install --build-from-source --HEAD libnugu
