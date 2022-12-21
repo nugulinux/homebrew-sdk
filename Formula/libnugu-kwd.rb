@@ -1,8 +1,8 @@
 class LibnuguKwd < Formula
   desc "C/C++ library for NUGU SDK Keyword detector"
   homepage "https://github.com/nugulinux/nugu-kwd"
-  url "https://github.com/nugulinux/nugu-kwd/releases/download/0.9.38ubuntu6/libnugu-kwd-src.tgz"
-  sha256 "ad524e18328dde5f07381cfad56a62a03f11108db3696a7d1f72e7996e8257aa"
+  url "https://github.com/nugulinux/nugu-kwd/releases/download/0.9.38ubuntu8/libnugu-kwd-src.tgz"
+  sha256 "b2d1e8dd0e3a8afa2c8b4831fe8ee727a727e3be2b5e2e563f4a355ddde8b92c"
   license "Apache-2.0"
 
   bottle do
