@@ -1,9 +1,9 @@
 class LibnuguExtensionSample < Formula
   desc "Sample applications for NUGU Extension SDK"
   homepage "https://github.com/nugulinux/nugu-examples"
-  url "https://github.com/nugulinux/nugu-examples/archive/264226c.tar.gz"
-  version "1.7.3"
-  sha256 "39d02ca3b8ddf5743b50deee7bb17eb83b0b40c281e9edc1093bb9bce8fc0d50"
+  url "https://github.com/nugulinux/nugu-examples/archive/518d69c.tar.gz"
+  version "1.7.4"
+  sha256 "e8cac7f8f55c76a63b14fdad654d1a1d6ee79b95e0a7e4e8a082bdf49bd366c4"
   license "Apache-2.0"
 
   # brew install --build-from-source --HEAD libnugu-extension-sample
