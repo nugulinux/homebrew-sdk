@@ -2,7 +2,7 @@ class NuguDbusDaemon < Formula
   desc "SESSION_BUS based dbus-daemon for NUGU service"
   homepage "https://github.com/nugulinux/nugu-daemon"
   url "https://github.com/nugulinux/nugu-daemon/archive/3c2c624.tar.gz"
-  version "1.7.3"
+  version "1.7.4"
   sha256 "9bd7b933a4c1ea2b906362dfd47091640740345ddbed3c5528a38ed0117ef06c"
   license "Apache-2.0"
 
