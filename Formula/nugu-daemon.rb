@@ -1,9 +1,9 @@
 class NuguDaemon < Formula
   desc "Daemon for NUGU service"
   homepage "https://github.com/nugulinux/nugu-daemon"
-  url "https://github.com/nugulinux/nugu-daemon/archive/fc4b05c.tar.gz"
-  version "1.7.3"
-  sha256 "26e7376ba6e50517c3b331934c14c77cdf8fcb5ac71831218e4985e41dac691b"
+  url "https://github.com/nugulinux/nugu-daemon/archive/7b99fc6.tar.gz"
+  version "1.7.4"
+  sha256 "51dbbbbf8296d6401b1cd26a4831acb4341886f000225f5163beec5c11e9d135"
   license "Apache-2.0"
 
   # brew install --build-from-source --HEAD nugu-daemon
