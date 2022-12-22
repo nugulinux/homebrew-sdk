@@ -7,11 +7,10 @@ class NuguDbusDaemon < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/nugu-dbus-daemon-1.7.3"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "bbc5e876c68b3400307b923eb6f5063623f0a8e99a08e19b3e805faa17f4bfc5"
-    sha256 cellar: :any_skip_relocation, monterey:       "ef54f0aa0b94ffe9ff7a6800318f2caf658a1ab2aba20d1de7ad65a0a69ae3fc"
-    sha256 cellar: :any_skip_relocation, big_sur:        "0c5ea8eaed04237e54aa84aa0826c66d65d232b78d0e808d9ba86dfbd5f4eb25"
+    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/nugu-dbus-daemon-1.7.4"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "5e6c07101deb81cbcffd222be2671d397ea9d33b6f565591fc08a6d83c1e52dd"
+    sha256 cellar: :any_skip_relocation, monterey:       "53f94d0e33dbe588aa35f84e7fffe9593bcc7233645434c548b1feecfc99c827"
+    sha256 cellar: :any_skip_relocation, big_sur:        "c0054bb91a7937767690d0738dacffd1a9d8135b3badde48c221242403a02ceb"
   end
 
   depends_on "cmake" => :build
