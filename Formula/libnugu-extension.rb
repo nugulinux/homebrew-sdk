@@ -10,11 +10,10 @@ class LibnuguExtension < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-extension-1.7.3"
-    rebuild 2
-    sha256 arm64_monterey: "1654a92f7be7efb0cd2e15573dfe0c5b8f895f0abbcd1f7d645bde809f22835b"
-    sha256 monterey:       "ddf1754fccfd93626e631563b13aaaa666fd33e636f8ff78716b1c69a262d395"
-    sha256 big_sur:        "0b9aef2501bb6887c202e1c547a78b86fd7625c43bdc6113fdbc7df089475cce"
+    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-extension-1.7.4"
+    sha256 arm64_monterey: "0c5198bce069c4d83edf0a0eabba1f38c7e71f00485b5832b956be113b31572d"
+    sha256 monterey:       "f3b17e067b9ca151b54c1de143fcbfdcc08c36ef61a388bf9a84844610b1df9d"
+    sha256 big_sur:        "d0b1ef5fcfbe17da5ef1295f4d8ba7dbcd9d977ba81ce9ba2f4d61161b4ed95b"
   end
 
   depends_on "cmake" => :build
