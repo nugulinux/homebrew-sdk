@@ -10,11 +10,10 @@ class NuguDaemon < Formula
   head "https://github.com/nugulinux/nugu-daemon.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/nugu-daemon-1.7.3"
-    rebuild 1
-    sha256 arm64_monterey: "ad0b7e017dd0473dc25b55d5e815b99848cd5a6a199fe4c980a24b98ca7468f0"
-    sha256 monterey:       "b9bfd385bdf5bf5b02e8697673587a8a9ace947ff928f42d7865a4217240030a"
-    sha256 big_sur:        "0fce14b37d76766c56b3e8e5914009774c34ce0b6e3d969da56f25603b81f836"
+    root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/nugu-daemon-1.7.4"
+    sha256 arm64_monterey: "08fa3abb9efff7ba7bd9b6d471c1a508d378a1586a0137d619057b2ec7d4c32b"
+    sha256 monterey:       "01bb8fe7345a6def0f0bbf75c42c5eba924f8c542568433b17e59b2e1ceacbe2"
+    sha256 big_sur:        "83bac0c712fba44839883f24139b9bb2f5613cf2a09b229aca9505cdb2744ffc"
   end
 
   depends_on "cmake" => :build
