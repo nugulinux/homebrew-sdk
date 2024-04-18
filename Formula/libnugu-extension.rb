@@ -3,10 +3,10 @@ require_relative "../lib/GitHubPrivateRepositorySnapshotDownloadStrategy"
 class LibnuguExtension < Formula
   desc "C/C++ library for NUGU SDK Extension"
   homepage "https://github.com/nugulinux/nugu-extension"
+  url "ssh://git@github.com/nugulinux/nugu-extension.git",
+      branch: "master"
+  version "1.7.5"
   # Use URL fragment to prevent brew audit failures for private repository.
-  url "https://github.com/nugulinux/#nugu-extension/archive/f23633a.tar.gz", using: GitHubPrivateRepositorySnapshotDownloadStrategy
-  version "1.7.4"
-  sha256 "8f3d222b69db2dfd9d7d90d238c8fbc25d657e6baa753e804b4e20ff0c979f40"
   license "Apache-2.0"
 
   bottle do

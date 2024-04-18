@@ -1,8 +1,8 @@
 class LibnuguEpd < Formula
   desc "C/C++ library for NUGU SDK Endpoint detector"
   homepage "https://github.com/nugulinux/nugu-epd"
-  url "https://github.com/nugulinux/nugu-epd/releases/download/2.1.11ubuntu6/libnugu-epd-src.tgz"
-  sha256 "66b422cc5043ddc30eccb14741bddc8cde11da67c72ba07938df2d86f8ea2824"
+  url "https://github.com/nugulinux/nugu-epd/releases/download/2.1.11ubuntu7/libnugu-epd-src.tgz"
+  sha256 "99ad543858eda0d68d89ffbe923f79d6d6480b072750127a8e96dde4590a8677"
   license "Apache-2.0"
 
   bottle do

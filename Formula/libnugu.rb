@@ -1,9 +1,9 @@
 class Libnugu < Formula
   desc "C/C++ library for NUGU SDK"
   homepage "https://github.com/nugu-developers/nugu-linux"
-  url "https://github.com/nugu-developers/nugu-linux/archive/8b598cf.tar.gz"
-  version "1.7.4"
-  sha256 "b0d03d292e46b1e44e0acf35d4009c724f8f49aa0aafa1043746d4446965ca42"
+  url "https://github.com/nugu-developers/nugu-linux.git",
+      branch: "master"
+  version "1.7.5"
   license "Apache-2.0"
 
   # brew install --build-from-source --HEAD libnugu
@@ -20,17 +20,19 @@ class Libnugu < Formula
   depends_on "pkg-config" => :build
   depends_on "curl"
   depends_on "glib"
-  depends_on "jsoncpp"
+  depends_on "rapidjson"
+  depends_on "opus"
   depends_on "libnugu-epd"
   depends_on "libnugu-kwd"
   depends_on "openssl"
 
   def install
     args = %W[
-      -DENABLE_LIBRARY_ONLY=ON
-      -DENABLE_BUILTIN_JSONCPP=OFF
       -DENABLE_BUILTIN_CURL=OFF
       -DENABLE_GSTREAMER_PLUGIN=OFF
+      -DENABLE_GSTREAMER_PLUGIN_VOLUME=OFF
+      -DENABLE_VENDOR_LIBRARY=ON
+      -DENABLE_BUILTIN_PLUGIN="speex,opus"
       -DPLUGIN_DIR=#{HOMEBREW_PREFIX}/lib/nugu
       -DPACKAGING=ON
     ]
