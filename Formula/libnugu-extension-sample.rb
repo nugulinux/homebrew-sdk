@@ -11,6 +11,9 @@ class LibnuguExtensionSample < Formula
 
   bottle do
     root_url "https://github.com/nugulinux/homebrew-sdk/releases/download/libnugu-extension-sample-1.7.6"
+    sha256 cellar: :any, arm64_sonoma: "f30c02f3dc4dde12517b508d6a695ee20270aa285cb4f65659c3028f77f99e67"
+    sha256 cellar: :any, ventura:      "4fdbc4e9273f79e1043073afe23093800014dd8bff0f3d693da2ad8263008e38"
+    sha256 cellar: :any, monterey:     "eb99abd8be9d7b5115d2d3b2e5020f80ba9b712781b6dc03f7fa07a47f266aad"
   end
 
   depends_on "cmake" => :build
