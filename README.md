@@ -2,17 +2,17 @@
 
 ## How do I install these formulae?
 
-Install SDK only
+Install SDK (SDK library, plugins and examples)
 
     brew install nugulinux/sdk/libnugu
 
-Install SDK with plugins
+Install Extension SDK
 
-    brew install nugulinux/sdk/libnugu-plugins
+    brew install nugulinux/sdk/libnugu-extension
 
-Install SDK, plugins and example applications
+Install sample for Extension SDK
 
-    brew install nugulinux/sdk/libnugu-examples
+    brew install nugulinux/sdk/libnugu-extension-sample
 
 Or `brew tap nugulinux/sdk` and then `brew install <formula>`.
 

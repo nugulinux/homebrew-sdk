@@ -10,29 +10,16 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [macos-12, macos-11, macOS]
+        os: [macos-12, macos-13, macos-14]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
-      - name: Cleanup Homebrew
-        run: |
-          # To trick shellenv.sh into always printing the output, prepend
-          # meaningless '/bin/' path to the PATH environment variable.
-          export PATH=/bin:$PATH
-          brew shellenv
-          eval "$(brew shellenv)"
-          cd $HOMEBREW_REPOSITORY
-          pwd
-          git reset --hard
-          git clean -dfx
-          ls -l
-
       - name: Cache Homebrew Bundler RubyGems
         id: cache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: ${{ steps.set-up-homebrew.outputs.gems-path }}
           key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
@@ -48,21 +35,12 @@ jobs:
 
       - run: brew test-bot --only-tap-syntax
 
-      - run: brew test-bot --only-formulae --verbose
+      - run: brew test-bot --only-formulae --verbose --debug
         if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v4
         with:
-          name: bottles
+          name: bottles_${{ matrix.os }}
           path: '*.bottle.*'
-
-      - name: Cleanup Homebrew
-        run: |
-          export PATH=/bin:$PATH
-          brew shellenv
-          eval "$(brew shellenv)"
-          cd $HOMEBREW_REPOSITORY
-          git reset --hard
-          git clean -dfx
